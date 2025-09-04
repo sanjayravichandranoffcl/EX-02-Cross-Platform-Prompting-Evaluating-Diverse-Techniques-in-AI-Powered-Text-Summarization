@@ -1,106 +1,111 @@
-# EX-02-Cross-Platform-Prompting-Evaluating-Diverse-Techniques-in-AI-Powered-Text-Summarization
+# Experiment 2:Evaluating AI-Powered Summarization of Blockchain Technology
+## Aim
+To create a clear undergraduate-level summary (120–150 words) of a 500-word article titled “The Basics of Blockchain Technology”, and then revise it into a simpler version with at least two real-world applications of blockchain.
+## Algorithm
+###  Step 1: Define Scope and Objectives
+1.1 Goal → Educational overview of blockchain fundamentals.
+1.2 Audience → Undergraduate students and beginners.
+1.3 Core Topics → Blocks, hashing, decentralization, consensus (PoW/PoS), digital keys, smart contracts, advantages/limitations, applications.
+### Step 2: Create Summary Outputs
+2.1 Draft a 120–150 word academic-level summary.
+2.2 Simplify the summary with everyday language.
+2.3 Add at least two real-world applications.
+### Step 3: Review & Edit
+3.1 Check clarity and readability (8th–10th grade level for simplified version).
+3.2 Ensure accuracy and consistency.
+3.3 Finalize outputs for submission.
+## Introduction
+Blockchain is one of the most influential technologies of the digital era. It is the foundation behind cryptocurrencies like Bitcoin and Ethereum, but its uses extend far beyond digital money. At its core, blockchain is a decentralized, transparent, and tamper-resistant way of recording transactions. This experiment explores blockchain fundamentals through two levels of summarization:
+- A concise undergraduate-level academic summary.
+- A simpler version with real-world examples for beginners.
 
-## AIM
-To evaluate and compare the effectiveness of prompting techniques (zero-shot, few-shot, chain-of-thought, role-based) across different AI platforms (e.g., ChatGPT, Gemini, Claude, Copilot) in a specific task: text summarization.
+## Output
+### Step 1: Undergraduate-Level Summary (120–150 words)
 
-## Scenario:
-You are part of a content curation team for an educational platform that delivers quick summaries of research papers to undergraduate students. Your task is to summarize a 500-word technical article on "The Basics of Blockchain Technology" using multiple AI platforms and prompting strategies.
+Blockchain is a decentralized digital ledger that records transactions in blocks linked sequentially. Each block includes transaction data, a timestamp, and a cryptographic hash of the previous block, forming a secure chain resistant to tampering. Unlike centralized systems, blockchain is distributed across many nodes, ensuring transparency and reducing reliance on intermediaries. New entries are validated by consensus mechanisms such as Proof of Work (miners solve puzzles) or Proof of Stake (validators commit tokens). Transactions are secured with public-private key cryptography, while smart contracts—self-executing programs—enable automation without intermediaries. Benefits include enhanced security, transparency, and traceability, though challenges such as scalability, high energy consumption (for PoW), and governance complexities remain. Blockchains can be public (open to all) or permissioned (restricted). Beyond cryptocurrencies, they are applied in finance, supply-chain tracking, and asset verification.
 
-Your goal is to determine which combination of prompting technique + platform provides the best summary in terms of:
-Accuracy
+(Word count: 147)
+### Step 2: Simplified Summary with Real-World Examples
+A blockchain is like a shared online notebook that many computers keep at the same time. Each page (block) is locked to the one before it, so no one can secretly change old records. To add new pages, the network agrees using rules like Proof of Work or Proof of Stake. People sign their transactions with digital keys, and smart contracts are small programs that run automatically when conditions are met.
+## Real-World Examples:
 
-Coherence
+##### - Money Transfers: People use Bitcoin or stablecoins to send money across countries in minutes without banks.
+##### - Supply Chains: Companies record the journey of food, medicines, or clothes from production to store shelves, so customers know their origin.
+##### - Blockchain is also popular for NFTs (digital collectibles) and land registry systems that are difficult to tamper with.
 
-Simplicity
+## Comparison Table: Blockchain Types
 
-Speed
+##### Type of Blockchain	Access	Example Use Case	Examples
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/60aa210c-13a5-493e-a297-20200f9ac5c9" />
 
-User experience
+## Mind Map of Blockchain Concepts
+### Blockchain Technology
 
----
+Definition: A decentralized, immutable, and distributed digital ledger.
 
-## **Algorithm**
+##### Working Principles:
 
-# Step 1: Select the Article
+- Blocks: Containers for transaction data.
 
-Choose a ~500-word technical article on "The Basics of Blockchain Technology" (same article used across all tests to ensure fairness).
+- Cryptographic Hashes: Unique codes that link blocks together securely.
 
-# Step 2: Define Prompting Techniques
+- Decentralized Network (P2P): Data is stored and validated by multiple participants.
 
-*Zero-shot*: "Summarize the following article in under 150 words."
-
-*Few-shot*: Provide 2–3 example summaries of different short texts, then ask for the blockchain article summary.
-
-*Chain-of-thought*: "Summarize the article step by step: first extract key ideas, then condense them into a coherent summary."
-
-*Role-based*: "You are an educational content curator for undergraduates. Write a clear, simple summary of this article."
-
-# Step 3: Run Across AI Platforms
-
-Input the same article and prompts into ChatGPT, Gemini, Claude, Copilot.
-
-Collect 16 summaries (4 prompting techniques × 4 platforms).
-
-# Step 4: Evaluation Metrics
-Evaluate each summary using:
-
-Accuracy – Fidelity to original content (measured by expert or rubric).
-
-Coherence – Logical flow, readability.
-
-Simplicity – Accessibility for undergraduates.
-
-Speed – Response time (measured or approximated).
-
-User Experience – Subjective ease of use, formatting, clarity.
-
-# Step 5: Scoring System
-
-Use a 1–5 Likert scale for each criterion.
-
-Example:
-
-Accuracy: 1 = misleading, 5 = highly faithful
-
-Coherence: 1 = fragmented, 5 = smooth flow
-
-Simplicity: 1 = too complex, 5 = very simple
-
-Speed: 1 = >30s, 5 = <5s
-
-User Experience: 1 = confusing output, 5 = very clear
-
-# Step 6: Aggregation
-
-Compute average score per technique per platform.
-
-Identify the best-performing combination.
-
-## Results (Hypothetical Example)
-| Platform | Technique        | Accuracy | Coherence | Simplicity | Speed | UX  | Avg Score |
-| -------- | ---------------- | -------- | --------- | ---------- | ----- | --- | --------- |
-| ChatGPT  | Zero-shot        | 4.5      | 4.2       | 4.0        | 4.8   | 4.5 | **4.4**   |
-| ChatGPT  | Few-shot         | 4.7      | 4.6       | 4.2        | 4.6   | 4.6 | **4.5**   |
-| ChatGPT  | Chain-of-thought | 4.8      | 4.7       | 3.9        | 4.4   | 4.4 | **4.4**   |
-| ChatGPT  | Role-based       | 4.9      | 4.8       | 4.7        | 4.5   | 4.8 | **4.7**   |
-| Gemini   | Zero-shot        | 4.0      | 3.9       | 4.0        | 4.7   | 4.2 | **4.1**   |
-| Gemini   | Few-shot         | 4.3      | 4.2       | 4.1        | 4.6   | 4.4 | **4.3**   |
-| Claude   | Role-based       | 4.8      | 4.7       | 4.6        | 4.2   | 4.7 | **4.6**   |
-| Copilot  | Zero-shot        | 3.5      | 3.6       | 3.9        | 4.8   | 3.8 | **3.9**   |
+- Consensus Mechanisms: Rules for agreeing on new blocks (e.g., Proof-of-Work, Proof-of-Stake).
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0528508a-86e8-4d6c-be77-57d8c1dbfef1" />
 
 
-Key Findings (example):
+#####  Key Features:
 
-Best combo: ChatGPT + Role-based prompting (avg 4.7)
+- Decentralization: No single point of control.
 
-Most accurate: ChatGPT (Chain-of-thought & Role-based)
+- Security: Cryptographically protected and tamper-resistant.
 
-Fastest: Copilot (but lower coherence)
+- Transparency: All participants can view the ledger (on public blockchains).
 
-Best for simplicity: Claude (Role-based)
+- Immutability: Once recorded, data cannot be altered.
+
+##### Applications:
+
+- Finance: Cryptocurrencies, international payments, decentralized finance (DeFi).
+
+- Healthcare: Securely managing patient records.
+
+- Supply Chain: Tracking goods and ensuring authenticity.
+
+- Voting Systems: Creating tamper-proof voting records.
+<img width="512" height="369" alt="image" src="https://github.com/user-attachments/assets/4c899e7b-e2ce-4ada-8657-9a5e4c34293d" />
 
 
-Thus,the Cross-Platform-Prompting-Evaluating-Diverse-Techniques-in-AI-Powered-Text-Summarization prompted in ai tools
-The best combination was ChatGPT with role-based prompting, as it gave the most accurate, coherent, and student-friendly summaries. Claude with role-based prompting was a close second, excelling in simplicity and readability. Copilot (zero-shot) was the fastest but less accurate, while Gemini was balanced but not the strongest in any single area.
+## Visualizing Blockchain Technology
+This image illustrates how blocks containing transaction data are linked together using unique hashes, forming a secure and distributed chain across a network of computers.
+This infographic provides a visual overview of the diverse industries being transformed by blockchain technology, from finance and logistics to healthcare and digital identity.
 
-Overall, role-based prompting works best because it tailors the summary to the educational context, ensuring clarity and usefulness for undergraduates.
+
+<img width="580" height="557" alt="image" src="https://github.com/user-attachments/assets/1a7f7902-6e7f-41bb-93c6-e34cafe4848b" />
+
+
+## Dynamic Understanding of Its Impact
+
+Blockchain's primary impact is its ability to create trust in a digital environment without a central authority. This fundamentally changes how we verify ownership, execute agreements (via smart contracts), and transfer value. It cuts out intermediaries, potentially lowering costs and increasing speed in fields like international finance and real estate.
+
+## Limitations
+Despite its potential, blockchain faces challenges:
+
+- Scalability: Many blockchains, like Bitcoin, can only process a small number of transactions per second compared to traditional systems like Visa.
+
+- Energy Consumption: Proof-of-Work systems require immense computational power, leading to significant environmental concerns.
+
+- Complexity & Regulation: The technology is still complex for the average user, and the legal and regulatory landscape is uncertain and evolving.
+
+
+## Future Potential
+The future of blockchain looks dynamic. Key trends include the rise of Web3 (a decentralized internet), the tokenization of real-world assets like art and property, and integration with the Internet of Things (IoT) to create secure records for smart devices. As the technology matures and becomes more energy-efficient (with the shift to Proof-of-Stake), its role in building a more transparent and secure digital world will likely expand.
+
+
+## Result
+The experiment successfully produced:
+- A 120–150 word undergraduate-level summary of blockchain fundamentals.
+- A simplified summary with real-world examples for beginners.
+- Supporting material (Comparison Table, Mind Map, Visualizations, Future Trends) that makes the report comprehensive and engaging.
+This demonstrates how blockchain concepts can be adapted for multiple audiences while maintaining accuracy and clarity.
